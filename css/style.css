@@ -24,8 +24,14 @@ body{
 .postad{
     background-color:  #373373;
     width: fit-content;
+    height: fit-content;
     color: white;
     text-align: center;
     margin:0.5em 0 1em 0;
     padding: 0.5em;
+}
+.text-border{
+    border: 0.1rem solid lightgrey;
+    padding: 1em;
+    margin: 0 1em;
 }
