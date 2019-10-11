@@ -2,36 +2,64 @@ body{
     background-color: white;
     margin: 0;
     border-top: 0.2em solid #373373;
-
+/* reset margin in body */
 }
 .logo{
-    margin: 1rem 0;
-    padding: 0 1rem; 
-    max-width: 50%;
-    max-height: 10vh; 
+    padding:0;
+    min-height: 3.5em;
+    max-width: 100%; /* make the logo responsive */
+    max-height: 100%; 
 }
 .header{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
+    /* divide header into fraction of 1(logo)+ 3(other 3 element)  */
 }
 .signin{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    padding: 0 1rem;
-    margin: 0;
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* again divide in grid for 3 elements*/
+    text-align:center;
+}
+.signin p{
+    padding-top: 0.25rem;
+    /* align all 3 components from top */
 }
 .postad{
-    background-color:  #373373;
-    width: fit-content;
-    height: fit-content;
+    background-color: #373373;
     color: white;
-    text-align: center;
-    margin:0.5em 0 1em 0;
-    padding: 0.5em;
+    margin-left:auto;
+    margin-right: auto;/* align content to center */
+    width: 3.8em; /* fit background with content size  */
 }
-.text-border{
+.search{
+    border-top: 0.1rem solid lightgrey;
+    border-left: 0.1rem solid lightgrey;
+    border-bottom: 0.1rem solid lightgrey;
+    padding-left: 1rem;
+    margin: 0.2rem 0 0.2rem 1em;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    /* create searching text box */
+}
+.sr-dr-common{
+    max-width: 2em;
+    height: 3.25em;
+    margin-right: 0.8rem;
     border: 0.1rem solid lightgrey;
-    padding: 1em;
-    margin: 0 1em;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    /* match the size of search image and dropdown with text box */
+}
+.srch-dis{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    /* align search image and dropdown with search text box */
+}
+.sr{
+   margin-top: 0.2rem; 
+}
+.dr{
+    margin-top: 0.24rem; 
+    /* align image with text box from top */
 }
