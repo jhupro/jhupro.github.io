@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>composite1</title>
+        <title>Search result for cars</title>
+        <meta name="description" content="rsults of the items searched for cars">
+        <meta name="author" content="bijay bdr karki">
         <link rel="stylesheet" href="css/style.css"> <!-- link the css file -->
     </head>
     
@@ -19,38 +21,74 @@
                 <p class="postad">Post ad</p>
             </div>
         </header>
-        <div>
-            <div class="srch-dis">
-                <div class="search"><p>cars</p></div>
-                <div><img src="/img/search.png" class="sr-dr-common sr" alt="search"></div>
+        <section>
+            <div>
+                <div class="srch-dis">
+                    <div class="search"><p>cars</p></div>
+                    <div><img src="/img/search.png" class="sr-dr-common sr" alt="search"></div>
+                </div>
+                <div class="srch-dis">
+                    <div class="search"><p>ottawa</p></div>
+                    <div><img src="/img/drop-down.jpg" class="sr-dr-common dr" alt="search"></div>
+                    <div class="dropdown">
+                        <a href="#">Brampton</a>
+                        <a href="#">Toronto</a>
+                        <a href="#">Hamilton</a>
+                        <a href="#">Mississauga</a>
+                        <a href="#">Naigra falls</a>                    
+                    </div>   
+                </div>
             </div>
-            <div class="srch-dis">
-                <div class="search"><p>ottawa</p></div>
-                <div><img src="/img/drop-down.jpg" class="sr-dr-common dr" alt="search"></div>
+            <div>
+                <div class="srch-dis">
+                    <div class="search"><p>Filters</p></div>
+                    <div><img src="/img/drop-down.jpg" class="sr-dr-common dr" alt="filters"></div>
+                    <div class="dropdown">                    
+                        <a href="#">Most recent</a>
+                        <a href="#">Category</a>
+                        <a href="#">Location</a>
+                        <a href="#">Price type</a>
+                        <a href="#">Exchange</a>
+                    </div>  
+                </div> 
+            </div>
+            <div class="result-sort">
+                <p class="result">Result: 1-10 of 23451</p>
+                <p class="sort">Sort by:</p>
+                <div class="post">
+                    <p>Posted: newest</p>
                 <div class="dropdown">
-                    <a href="#">Brampton</a>
-                    <a href="#">Toronto</a>
-                    <a href="#">Hamilton</a>
-                    <a href="#">Mississauga</a>
-                    <a href="#">Naigra falls</a>                    
-                </div>   
+                        <a href="#">Posted: oldest</a>
+                        <a href="#">Price: Heighest</a>
+                        <a href="#">Price: Lowest</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="/img/drop-down.png" class="dropimg" alt="dropdown">
+                </div>
             </div>
-        </div>
-        <div>
-            <div class="srch-dis">
-                <div class="search"><p>Filters</p></div>
-                <div><img src="/img/drop-down.jpg" class="sr-dr-common dr" alt="filters"></div>
-                <div class="dropdown">                    
-                    <a href="#">Most recent</a>
-                    <a href="#">Category</a>
-                    <a href="#">Location</a>
-                    <a href="#">Price type</a>
-                    <a href="#">Exchange</a>
-                </div>  
-            </div> 
-        </div>
+        </section> 
+        <main>
+            <div class="items-display">
+                <div> 
+                    <img src="/img/nio_ep9_03.jpg" class="itempic" alt="car">
+                </div>
+                <div class="item-cont">
+                   <div class="heading"> 
+                       <p>Car 1</p>
+                    </div>
+                    <div class="price">
+                        <p>CAD$ 23,500</p>
+                    </div>
+                    <div class="expln"> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, dolor nostrum reprehenderit quasi non et necessitatibus fugiat nisi, .</p>
+                    </div>
+                </div>
+            </div>
+            
 
 
+        </main>  
 
     </body>
 </html>
