@@ -44,7 +44,7 @@ body{
     /* create searching text box */
 }
 .search p{
-    margin:0;
+    margin:0.1em 0;
 }
 .sr-dr-common{
     max-width: 2em;
@@ -152,6 +152,7 @@ body{
     width: 7.5em;
     height: auto;
     padding: 0.2em 0.2em;
+    vertical-align: center;
 }
 .item-cont{
     display:grid;
@@ -192,9 +193,14 @@ body{
 .autom{
     grid-area: autom;
     line-height: 1.5em;
+    display:inline;
 }
 .autom p{
     font-size: 0.5em;
     margin:0;
     
+}
+.star{
+    widows: 0.5em;
+    height: 0.9em;
 }
