@@ -204,3 +204,39 @@ body{
     widows: 0.5em;
     height: 0.9em;
 }
+footer{
+    background-color: #3e4153;
+    color: white;
+
+}
+.foot-align{
+    padding: 1em 2em;
+}
+.foot-align p{
+    margin: 0.5em 0;
+    color: #e1e1e1;
+}
+
+
+.social-dis{
+    text-align: center;
+    padding: 1em;
+}
+
+.social{
+    width: 5em;
+    height: 2em;
+}
+
+
+.icon{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    color: white;   
+}
+.icon i{
+    padding: 1rem 1rem;
+    background: #6f727f;
+    border-radius: 1.5em;
+}
