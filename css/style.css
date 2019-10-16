@@ -204,6 +204,7 @@ body{
     widows: 0.5em;
     height: 0.9em;
 }
+/* all css for footer */
 footer{
     background-color: #3e4153;
     color: white;
@@ -240,3 +241,4 @@ footer{
     background: #6f727f;
     border-radius: 1.5em;
 }
+/* footer css ends */
