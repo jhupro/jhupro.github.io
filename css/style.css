@@ -68,7 +68,25 @@ body{
     margin-top: 0.24rem; 
     /* align image with text box from top */
 }
-
+.suggestion{
+    margin: 1em 2.2em;
+}
+.suggestion p, .suggestion ul{
+    display: inline;
+    color: blue;
+}
+.suggestion li{
+    display: inline;
+    padding: 1em;
+    /* margin:1em; */
+    
+}
+.view1{
+    display:inline;
+}
+.view2{
+    display: none;
+}
 /* create dropdown menu using hover effect only */
 .dropdown{
    display: none;
@@ -263,10 +281,28 @@ footer{
     margin: 0 auto;
     color: white;   
 }
+.icon a{
+    color:white;
+}
 .icon i{
     padding: 1rem 1rem;
     background: #6f727f;
     border-radius: 1.5em;
+}
+.f:hover{
+  background-color: #3b5998;
+}
+.t:hover{
+    background-color: #1da1f2;
+}
+.i:hover{
+    background-color: #dd2a7b;
+}
+.in:hover{
+    background-color: #0e76a8;
+}
+.y:hover{
+    background-color: #ff0000;
 }
 /* footer css ends */
 
