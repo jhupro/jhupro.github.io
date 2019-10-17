@@ -204,10 +204,33 @@ body{
     widows: 0.5em;
     height: 0.9em;
 }
+/* pagination css */
+.pagination {
+    display: inline-block;
+    color: black;
+    padding: 1em;
+    text-decoration: none;
+  }
+  .active{
+      background-color: aquamarine;
+  }
+  .pagination a{
+    margin: 0.2em;
+    padding: 0.4em;
+    border: 1px solid grey;
+    text-decoration: none;
+  }
+  .pagination a:hover{
+    background-color: lightseagreen;
+  }
+  .pagination-center{
+    text-align: center;
+  }
 /* all css for footer */
 footer{
     background-color: #3e4153;
     color: white;
+    text-align: center;
 
 }
 .foot-align{
@@ -228,7 +251,11 @@ footer{
     width: 5em;
     height: 2em;
 }
+.copyright{
+    text-align: center;
+    padding: 1em;
 
+}
 
 .icon{
     font-size: 1.5em;
@@ -242,3 +269,65 @@ footer{
     border-radius: 1.5em;
 }
 /* footer css ends */
+
+@media screen and (min-width: 600px) {
+    .result-sort, .header, .srch-dis{
+        font-size: 1.3em;
+    }
+
+    .sr-dr-common{
+        height:1.65em;
+    }
+    .dr{
+        margin-top: 0.1689em;
+    }
+    .foot-align{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:  "jhup explo"
+                            "info suppo";
+    }
+    .responsive-display{
+        margin: 0 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "item1 item2"
+                            "item3 item4"
+                            "item5 item6"
+                            "item7 item8"
+                            "item9 item0";
+    }
+    .items-display{
+        margin: 0.2em 0.25em;
+    }
+
+}
+@media screen and (min-width: 900px) {
+    .foot-align{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:  "jhup explo info suppo";
+    }
+    .responsive-icon{
+        margin-top: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "store icon";
+    
+    }
+    .social-dis{
+        text-align: right;
+    }
+    .icon{
+        margin:0;
+        text-align: left;
+    }
+    .responsive-display{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "item1 item2 item3"
+                             "item4 item5 item6"
+                             "item7 item8 item9"
+                             "item0  .     .   ";
+    }  
+}
